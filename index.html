@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="calculator" name="c">
+        <input type="text" class="value" name="txt" readonly/>
+        <span class="num clear" onclick="c.txt.value = ''">
+          C
+        </span>
+        <span class="num" onclick="document.c.txt.value += '/'">
+          /
+        </span>
+        <span class="num" onclick="document.c.txt.value += '*'">
+          *
+        </span>
+        <span class="num" onclick="document.c.txt.value += '7'">
+          7
+        </span>
+        <span class="num" onclick="document.c.txt.value += '8'">
+          8
+        </span>
+        <span class="num" onclick="document.c.txt.value += '9'">
+          9
+        </span>
+        <span class="num" onclick="document.c.txt.value += '-'">
+          -
+        </span>
+        <span class="num" onclick="document.c.txt.value += '4'">
+          4
+        </span>
+        <span class="num" onclick="document.c.txt.value += '5'">
+          5
+        </span>
+        <span class="num" onclick="document.c.txt.value += '6'">
+          6
+        </span>
+        <span class="num plus" onclick="document.c.txt.value += '+'">
+          +
+        </span>
+        <span class="num" onclick="document.c.txt.value += '1'">
+          1
+        </span>
+        <span class="num" onclick="document.c.txt.value += '2'">
+          2
+        </span>
+        <span class="num" onclick="document.c.txt.value += '3'">
+          3
+        </span>
+        <span class="num" onclick="document.c.txt.value += '0'">
+          0
+        </span>
+        <span class="num" onclick="document.c.txt.value += '00'">
+          00
+        </span>
+        <span class="num" onclick="document.c.txt.value += '.'">
+          .
+        </span>
+        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value)">
+          =
+        </span>
+      </form> 
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js">
+	VanillaTilt.init(document.querySelector(".container"), {
+		max: 25,
+		speed: 400,
+		glare: false,
+		max-glare: 0.2
+	});
+	</script>
+    </body>
+</html>
