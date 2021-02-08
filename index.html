@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" data-tilt data-tilt-glare="false" data-tilt-maxGlare="0.2" data-tilt-speed="400" data-tilt-maxTilt="15">
       <form class="calculator" name="c">
         <input type="text" class="value" name="txt" readonly/>
         <span class="num clear" onclick="c.txt.value = ''">
@@ -66,6 +66,8 @@
         </span>
       </form> 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
     <script src="script.js"></script>
     </body>
 </html>

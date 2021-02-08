@@ -12,35 +12,12 @@ body {
   background: black;
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(purple, cyan);
-  clip-path: circle(22% at 30% 20%);
-}
-
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(pink, cyan);
-  clip-path: circle(20% at 70% 90%);
-}
-
 .container {
   position: relative;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 6px;
   overflow: hidden;
   z-index: 10;
-  backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
