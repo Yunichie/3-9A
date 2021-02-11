@@ -61,7 +61,7 @@
         <span class="num" onclick="document.c.txt.value += '.'">
           .
         </span>
-        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value); if(c.txt.value.length > 15) { document.c.txt.value = 'input tidak bisa lebih dari 15' }">
+        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value); if(c.txt.value.length > 15) { alert('input tidak bisa lebih dari 15'); document.c.txt.value = ''; }">
           =
         </span>
       </form> 
