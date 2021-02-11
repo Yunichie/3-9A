@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, white, cyan, purple);
+  background: linear-gradient(135deg, cyan, #fc00ff);
 }
 
 .container {
@@ -50,9 +50,10 @@ body {
   width: 75px;
   height: 75px;
   color: white;
+  font-family: "Exo 2", sans-serif;
   font-weight: 400;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 23px;
   user-select: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
@@ -60,12 +61,12 @@ body {
 }
 
 .container .calculator span:hover {
-  transition: 1s;
+  transition: 0.5s;
   background: rgba(255, 255, 225, 0.05);
 }
 
 .container .calculator span:active {
-  background: gray;
+  background: #defaf9;
   color: black;
   font-size: 24px;
   font-weight: 500;

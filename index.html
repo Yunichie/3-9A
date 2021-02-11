@@ -13,11 +13,11 @@
         <span class="num clear" onclick="c.txt.value = ''">
           C
         </span>
-        <span class="num" onclick="document.c.txt.value += '/'">
-          /
+        <span class="num" onclick="document.c.txt.value += '/">
+          ÷
         </span>
         <span class="num" onclick="document.c.txt.value += '*'">
-          *
+          ×
         </span>
         <span class="num" onclick="document.c.txt.value += '7'">
           7
@@ -55,17 +55,21 @@
         <span class="num" onclick="document.c.txt.value += '0'">
           0
         </span>
-        <span class="num" onclick="document.c.txt.value += '00'">
-          00
+        <span class="num" onclick="document.c.txt.value = c.txt.value.replace(/([^])$/g, '')">
+          c
         </span>
         <span class="num" onclick="document.c.txt.value += '.'">
           .
         </span>
-        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value); if(c.txt.value.length > 15) { alert('input tidak bisa lebih dari 15'); document.c.txt.value = ''; }">
+        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value); if(c.txt.value.length > 15) { alert('input tidak bisa lebih dari 15 karakter!'); document.c.txt.value = ''; }">
           =
         </span>
       </form> 
     </div>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@350&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
