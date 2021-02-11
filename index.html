@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container" data-tilt data-tilt-glare="false" data-tilt-maxGlare="0.2" data-tilt-speed="400" data-tilt-maxTilt="15">
+    <div class="container" data-tilt-glare="false" data-tilt-maxGlare="0.2" data-tilt-speed="400" data-tilt-maxTilt="15">
       <form class="calculator" name="c">
         <input type="text" class="value" name="txt" readonly/>
         <span class="num clear" onclick="c.txt.value = ''">
@@ -61,7 +61,7 @@
         <span class="num" onclick="document.c.txt.value += '.'">
           .
         </span>
-        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value)">
+        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value); if(c.txt.value.length > 15) { document.c.txt.value = 'input tidak bisa lebih dari 15' }">
           =
         </span>
       </form> 

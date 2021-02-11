@@ -9,12 +9,13 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: black;
+  background: linear-gradient(135deg, white, cyan, purple);
 }
 
 .container {
-  position: relative;
+  position: absolute;
   background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
   border-radius: 6px;
   overflow: hidden;
   z-index: 10;
