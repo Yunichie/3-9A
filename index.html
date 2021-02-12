@@ -55,21 +55,17 @@
         <span class="num" onclick="document.c.txt.value += '0'">
           0
         </span>
-        <span class="num" onclick="document.c.txt.value = c.txt.value.replace(/([^])$/g, '')">
+        <span class="num" onclick="smallC()">
           c
         </span>
         <span class="num" onclick="document.c.txt.value += '.'">
           .
         </span>
-        <span class="num equal" onclick="document.c.txt.value = eval(c.txt.value); if(c.txt.value.length > 15) { alert('input tidak bisa lebih dari 15 karakter!'); document.c.txt.value = ''; }">
+        <span class="num equal" onclick="equal()">
           =
         </span>
       </form> 
     </div>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@350&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
